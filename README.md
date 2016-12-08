@@ -1,2 +1,2 @@
 # fagompro
-A private repo for D site
+A public repo for developing the website
