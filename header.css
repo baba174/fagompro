@@ -1,0 +1,733 @@
+body{
+	padding : 0px;
+	margin : 0px auto;
+	width: 100%;
+	/*background-color: #DFE3EE;*/
+	background-color: white;
+}
+@media only screen and (min-width: 920px){
+#hdrrow{
+	width: 100%;
+	background-color: rgba(12,13,14,0.86);
+}
+#hdrrow_mob{
+	visibility: hidden;
+	height: 0px;
+}
+.header{
+	width: 100%;
+	border : 1px solid black;
+}
+.header_mob{
+	visibility: hidden;
+	height: 0px;
+}
+td{
+	padding-left: 10px;
+}
+#leftname{
+	float: left;
+	color: white;
+	font-size: 30px;
+	font-weight: bold;
+}
+#rightname{
+	color: #0F7DC0;
+	font-size: 30px;
+	font-weight: bold;
+}
+#search_text{
+	width: 450px;
+	height: 30px;
+	border-radius: 1px;
+}
+#search_btn{
+	width: 40%;
+}
+#postques{
+	font-weight: bold;
+	color: white;
+	cursor: pointer;
+	width: 10%;
+	padding-left: 40px;
+	float: center;
+	font-size: 20px;
+}
+#postques:hover{
+background-color: #66757F;
+}
+#notification_link{
+	color: white;
+	cursor: pointer;
+	font-weight: bold;
+	width: 10%;
+	font-size: 20px;
+}
+#notification_link:hover{
+	background-color: #66757F;
+}
+#overflow_btn{
+	color: white;
+	cursor: pointer;
+	font-weight: bold;
+	padding-left: 30px;
+}
+#quotalink{
+	width: 18%;
+}
+a{
+	text-decoration: none;
+}
+#newsfeed{
+	float: left;
+	position: relative;
+}
+#topfeed{
+	position: fixed;
+	background-color: white;
+	margin-left: 60%;
+	margin-top: 5%;
+	padding-left: 2%;
+	width: 400px;
+	border-radius: 1px;
+	/*-moz-box-shadow: .1px .1px .1px .1px black;
+	-webkit-box-shadow: .1px .1px .1px .1px black;
+	box-shadow: .1px .1px .1px 0px black;*/
+}
+#toptrend_hdr{
+	font-weight: bolder;
+	font-size: 18px;
+	color: #66757F;
+}
+#topqueslist{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+#topvotevalue{
+	float: left;
+	width: 35px;
+	height: 20px;
+	padding-left: 10px;
+	padding-top: 5px;
+	background-color: #34A853;
+	color: white;
+}
+#topvoteques{
+	font-size: 15px;
+	padding-top: 3px;
+	margin-left: 50px;
+	font-weight: bold;
+}
+#tick_img{
+	float : left;
+	width: 20px;
+	height: 20px;
+}
+#img_tick{
+	width: 20px;
+	height: 20px;
+	float: right;
+}
+#ques_tagline{
+	margin-left: 3%;
+	width: 90%;
+	font-weight: bolder;
+	font-size: 20px;
+}
+#ques_tagline:hover{
+	text-decoration: underline;
+	cursor: pointer;
+	color: #66757F;
+}
+#post_detail{
+	width: 650px;
+	border: 1px solid white;
+	border-radius: 1px;
+	-moz-box-shadow: .1px .1px .1px .1px #000;
+	-webkit-box-shadow: .1px .1px .1px .1px #000;
+	box-shadow: .1px .1px .1px .1px #000;
+	margin-left: 50px;
+	margin-top: 20px;
+	float: left;
+	background-color: white;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+#ques_desc{
+	padding-top: 10px;
+	margin-left: 3%;
+	width: 90%;
+	font-size: 15px;
+}
+#profile_pic{
+	width: 30px;
+	height: 30px;
+	float: left;
+}
+#pic_profile{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+}
+#user_details{
+	padding-left: 20px;
+}
+
+#votevalue{
+	height: 25px;
+	min-width: 30px;
+	width: 500px;
+	max-width: 500px;
+	float: left;
+	background-color: #0F7DC0;
+	margin-left: 20px;
+	margin-top: 5px;
+	border-radius: 3px;
+}
+#vote_number{
+	margin-top: 8px;
+}
+#vote_submit{
+	margin-left: 20px;
+	height: 30px;
+	width: 90px;	
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background-color: #f5f5f0;
+	color: black;
+}
+#username{
+	color: #3B5998;
+	font-weight: bolder;
+}
+#postedtime{
+	color: #66757F;
+}
+
+#dropbutton{
+	padding-top: 5px;
+	width: 30px;
+	height: 30px;
+}
+/* drop down menu*/
+/* Dropdown Button */
+.dropbtn {
+    
+    color: white;
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    color: black;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+	right:0;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    font-size: 15px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+/* profile page design*/
+
+#profiledtl{
+	border-bottom: 1px solid #66757F;
+	height: 25%;
+	width: 42%;
+	margin-left: 15%;
+	margin-top: 5%;
+	float: left;
+}
+#profileimg{
+	border: 1px soid red;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	float: left;
+	margin-right: 40px;
+}
+#profilename{
+	font-size: 30px;
+	font-weight: bold;
+}
+#addbio{
+	text-decoration: underline;
+	cursor: pointer;
+	margin-top: 10px;
+}
+#follow{
+	margin-top: 50px;
+	
+}
+#followers{
+	float: left;
+	width: 150px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border: 1px solid #66757F;
+	border-radius: 3px;
+	color: #66757F;
+	cursor: pointer;
+}
+#following{
+	border: 1px solid #66757F;
+	border-radius: 3px;
+	margin-left: 300px;
+	width: 150px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	color: #66757F;
+	cursor: pointer;
+}
+#extraoption{
+	background-color: white;
+	margin-left: 62%;
+	margin-top: 14%;
+	padding-left: 15%;
+	width: 400px;
+	width: 10%;
+}
+#feeds{
+	border-bottom: 1px solid #66757F;
+	padding-left: 5px;
+}
+#findpeople{
+	cursor: pointer;
+	color: #66757F;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+#findpeople:hover{
+	text-decoration: underline;
+	color: #66757F;
+}
+#trending{
+	cursor: pointer;
+	color: #66757F;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+#trending:hover{
+	text-decoration: underline;
+	color: #66757F;
+}
+#newsfeed_profile{
+	float: left;
+	margin-left: 100px;
+}
+#nothing{
+	font-size: 20px;
+	margin-left: 200px;
+}
+#postfooter{
+
+}
+#comments{
+	padding-top: 5px;
+	cursor: pointer;
+
+}
+#subbtn{
+	width: 20%;
+	float: left;
+}
+
+/* comments modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* comment box styling starts */
+#inputtxt{
+	float: left;
+	margin-left: 20px;
+	width: 350px;
+}
+.commenttxt{
+	width: 400px;
+}
+#postcomment{
+	
+}
+.commentssec{
+	/*visibility: hidden;
+	min-height: 30px;*/
+	display: none;
+}
+
+#postcomment{
+	padding-top: 5px;
+}
+.cmntinp{
+	width: 320px;
+	height: 30px;
+
+}
+#cmntbtn{
+	margin-right: 35px;
+	height: 30px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background-color: #f5f5f0;
+	color: black;
+}
+/* comment list styling starts */
+.commentlist{
+	margin-top: 10px;
+	/*border-top: 1px solid #66757F;*/
+}
+#commentdtl{	
+	margin-top: 5px;
+	margin-left: 50px;
+}
+#comment{
+	padding-top: 5px;
+	/*border-bottom:  1px solid #66757F;*/
+}
+.commentlist{
+
+}
+/* search bar on top*/
+#searchbar{
+	padding-top: 15px;
+}
+#searchquery{
+  position: absolute;
+  z-index: 10;
+  margin-top: 5px;
+  margin-left:0px;
+  background-color: white;
+  width: 450px;
+  border: 1px solid black;
+}
+#ques_search_list{
+	font-size: 18px;
+	padding: 5px;
+	cursor: pointer;
+	border-bottom: .1px solid #E1E8ED;
+}
+#ques_search_list:hover{
+	background-color: .1px solid #E1E8ED;
+}
+
+
+
+}
+@media only screen and (max-width: 480px){
+#hdrrow{
+	visibility: hidden;
+	height: 0px;
+}
+.header{
+	visibility: hidden;
+	height: 0px;
+}
+#hdrrow_mob{
+	width: 100%;
+	height: 40px;
+	background-color: rgba(12,13,14,0.86);
+	padding: 0px;
+}
+a{
+	text-decoration: none;
+}
+td{
+	padding-top: 5px;
+	padding-left: 5px;
+}
+#leftname{
+	float: left;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+}
+#rightname{
+	color: #0F7DC0;
+	font-size: 20px;
+	font-weight: bold;
+}
+#search_text{
+	width: 100%;
+	height: 30px;
+	border-radius: 5px;
+}
+#search_btn{
+	width: 300px;
+}
+#postques{
+	color: white;
+	cursor: pointer;
+	width: 30%;
+	font-size: 15px;
+	padding-left: 20px;
+	padding-right: 50px;
+	border-right: 1px solid white;
+}
+#notification_link{
+	color: white;
+	cursor: pointer;
+	width: 150px;
+	font-size: 15px;
+	border-right: 1px solid white;
+}
+#overflow_btn{
+	color: white;
+	cursor: pointer;
+	font-weight: bold;
+	float: right;
+	margin-right: 3%;
+	float: center;
+	width: 30px;
+}
+#quotalink{
+	width: 12%;
+}
+#newsfeed{
+	
+}
+#tick_img{
+	float : left;
+	width: 20px;
+	height: 20px;
+}
+#img_tick{
+	width: 20px;
+	height: 20px;
+	
+}
+#ques_tagline{
+	margin-left: 20px;
+	font-weight: bolder;
+}
+#post_detail{
+	width: 98%;
+	border: 1px solid white;
+	border-radius: 1px;
+	-moz-box-shadow: 1px 1px 1px 1px #000;
+	-webkit-box-shadow: 1px 1px 1px 1px #000;
+	box-shadow: 1px 1px 1px 1px #000;
+	margin-left: 1px;
+	margin-top: 10px;
+	float: left;
+	background-color: white;
+}
+#ques_desc{
+	padding-top: 10px;
+	margin-left: 3%;
+	width: 90%;
+	font-size: 15px;
+}
+#profile_pic{
+	width: 30px;
+	height: 30px;
+	float: left;
+}
+#pic_profile{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+}
+#user_details{
+	padding-left: 20px;
+}
+#topfeed{
+	visibility: hidden;
+
+}
+#votevalue{
+	height: 25px;
+	width: 250px;
+	min-width: 40px;
+	max-width: 250px;
+	float: left;
+	background-color: #0F7DC0;
+	margin-left: 20px;
+	margin-top: 5px;
+	border-radius: 3px;
+	margin-right: 5px;
+}
+#vote_number{
+	margin-top: 8px;
+}
+#vote_submit{
+	margin-left: 20px;
+	height: 30px;
+	width: 90px;	
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background-color: #f5f5f0;
+	color: black;
+}
+#username{
+	color: #3B5998;
+	font-weight: bolder;
+}
+#postedtime{
+	color: #66757F;
+}
+
+
+/* profile page design*/
+
+#profiledtl{
+	border-bottom: 1px solid #66757F;
+	height: 300px;
+	width: 420px;
+	margin-left: 15%;
+	margin-top: 5%;
+	float: left;
+}
+#profileimg{
+	border: 1px soid red;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	float: left;
+	margin-right: 40px;
+}
+#profilename{
+	font-size: 30px;
+	font-weight: bold;
+}
+#addbio{
+	text-decoration: underline;
+	cursor: pointer;
+	margin-top: 10px;
+}
+#follow{
+	margin-top: 50px;
+	
+}
+#followers{
+	float: left;
+	width: 150px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border: 1px solid #66757F;
+	border-radius: 3px;
+	color: #66757F;
+	cursor: pointer;
+}
+#following{
+	border: 1px solid #66757F;
+	border-radius: 3px;
+	margin-left: 300px;
+	width: 150px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	color: #66757F;
+	cursor: pointer;
+}
+#extraoption{
+	background-color: white;
+	margin-left: 62%;
+	margin-top: 14%;
+	padding-left: 15%;
+	width: 400px;
+	width: 10%;
+}
+#feeds{
+	border-bottom: 1px solid #66757F;
+	padding-left: 5px;
+}
+#findpeople{
+	cursor: pointer;
+	color: #66757F;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+#findpeople:hover{
+	text-decoration: underline;
+	color: #66757F;
+}
+#trending{
+	cursor: pointer;
+	color: #66757F;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+#trending:hover{
+	text-decoration: underline;
+	color: #66757F;
+}
+#newsfeed_profile{
+	float: left;
+	margin-left: 100px;
+}
+#nothing{
+	font-size: 20px;
+	margin-left: 200px;
+}
+
+
+}
+
